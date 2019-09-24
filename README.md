@@ -4,4 +4,4 @@
 
 ## License
 
-`MagicSample` is avaliable under the MIT license. See the LICENSE file for more info.
+`MagicSample` is avaliable under the MIT license. See the [LICENSE](https://github.com/gaoshanyu/MagicSample/blob/master/LICENSE.md) file for more info.
