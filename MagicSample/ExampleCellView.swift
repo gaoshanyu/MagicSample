@@ -15,11 +15,10 @@ struct ExampleCellView: View {
         HStack {
             Image(example.imageName)
                 .resizable()
-                .frame(width: 88, height: 88, alignment: .leading)
+                .frame(width: 44, height: 44, alignment: .leading)
                 .clipShape(Circle())
             VStack(alignment: .leading) {
                 Text(example.title)
-                Text(example.subtitle)
             }
         }
     }
@@ -27,6 +26,10 @@ struct ExampleCellView: View {
 
 struct ExampleCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ExampleCellView(example: Example(title: "总书记", subtitle: "2019-09-21 12:38:13", content: "让老区人民过上幸福美好生活。"))
+        Group {
+            ExampleCellView(example: exampleList[0])
+            ExampleCellView(example: exampleList[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 120))
     }
 }
