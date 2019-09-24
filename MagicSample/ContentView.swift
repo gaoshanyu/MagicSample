@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    var examples: [Example] = []
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List(examples) { example in
+                ExampleCellView(example: example)
+            }.navigationBarTitle(Text("SwiftUI Examples"))
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(examples: exampleList)
     }
 }
