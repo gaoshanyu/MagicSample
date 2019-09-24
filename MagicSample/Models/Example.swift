@@ -15,6 +15,7 @@ struct Example: Hashable, Codable, Identifiable {
 }
 
 let exampleList = [
-    Example(id: 1, title: "Apple's Sample", imageName: "image01"),
-    Example(id: 2, title: "Other Samples", imageName: "image02")
+    Example(id: 1, title: "Apple's Map Sample", imageName: "image01"),
+    Example(id: 2, title: "Apple's Drawing and Animation Sample", imageName: "image02"),
+    Example(id: 3, title: "Other Samples", imageName: "turtlerock")
 ]
