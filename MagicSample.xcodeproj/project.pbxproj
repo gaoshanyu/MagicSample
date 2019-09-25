@@ -153,6 +153,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8426734C233B629A007A967B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				847FB9D52339AB2200BF9537 /* Models */,
+				84FEBFE22338C41500709814 /* ContentView.swift */,
+				84FEC0142338CB4900709814 /* ExampleCellView.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		847FB9BA2339AA7800BF9537 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,11 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				847FB9B72339A83900BF9537 /* MagicSample.entitlements */,
-				847FB9D52339AB2200BF9537 /* Models */,
+				8426734C233B629A007A967B /* Example */,
 				84FEBFDE2338C41500709814 /* AppDelegate.swift */,
 				84FEBFE02338C41500709814 /* SceneDelegate.swift */,
-				84FEBFE22338C41500709814 /* ContentView.swift */,
-				84FEC0142338CB4900709814 /* ExampleCellView.swift */,
 				84267348233B5393007A967B /* HomeView.swift */,
 				8426734A233B5615007A967B /* HomeCell.swift */,
 				847FB9D82339AFA000BF9537 /* Landmark */,
