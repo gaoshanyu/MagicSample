@@ -125,7 +125,7 @@
         "city": "Willow",
         "state": "Alaska",
         "id": 1009,
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": false,
         "park": "State Recreation Area",
         "coordinates": {
