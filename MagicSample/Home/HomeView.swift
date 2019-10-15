@@ -38,7 +38,7 @@ struct HomeView: View {
             List {
                 FeaturedLandmarks(landmarks: featured)
                     .scaledToFill()
-                    .frame(height: 200)
+                    .frame(height: CGFloat(200))
                     .clipped()
                     .listRowInsets(EdgeInsets())
                 
@@ -47,7 +47,7 @@ struct HomeView: View {
                 }
                 .listRowInsets(EdgeInsets())
                 
-                NavigationLink(destination: LandmarkListView()) {
+                NavigationLink(destination: LandmarkListView { LandmarkDetailView(landmark: $0) }) {
                     Text("See All")
                 }
             }

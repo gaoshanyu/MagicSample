@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(exampleList) { example in
-                NavigationLink(destination: LandmarkListView()) {
+                NavigationLink(destination: LandmarkListView { LandmarkDetailView(landmark: $0) }) {
                     ExampleCellView(example: example)
                 }
             }
