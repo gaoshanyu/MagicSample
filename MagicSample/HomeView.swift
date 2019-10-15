@@ -21,6 +21,7 @@ struct HomeView: View {
     }
     
     @State var showingProfile = false
+    @EnvironmentObject var userData: UserData
     
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
@@ -53,7 +54,8 @@ struct HomeView: View {
             .navigationBarTitle(Text("Apple's Sample"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost()
+                    .environmentObject(self.userData)
             }
         }
     }
